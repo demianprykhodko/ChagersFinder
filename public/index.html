@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electric</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Trying out Google Maps APIda da s</h1>
+    <div class="input">
+      <input type="text" id="from" placeholder="Origin" />
+      <input type="text" id="to" placeholder="Destination" />
+    </div>
+    <div class="button">
+      <button id="submit" onclick="calcRoute();">Submit</button>
+    </div>
+    <div id="map"></div>
+    <div class="location-button">
+      <button id="location" onclick="getLocation();">Get Location</button>
+    </div>
+    <div id="output">
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnw4FgSCtVB444q7Gv1jON-4xTO6TyPfA&libraries=places"></script>
+    <script src="./decodePolyline.js"></script>
+    <script src="./axios.js"></script>
+    <script src="./map.js"></script>
+  </body>
+</html>

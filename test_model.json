@@ -1,0 +1,197 @@
+{
+    "ChargeDevice": [
+      {
+        "ChargeDeviceId": "9c8661befae6dbcd08304dbf4dcafodb",
+        "ChargeDeviceRef": "SC22",
+        "ChargeDeviceName": "Little Victoria St Car Park - Socket 2",
+        "ChargeDeviceText": "DRD Roads Service Car Park",
+        "ChargeDeviceLocation": {
+          "Latitude": "54.592703",
+          "Longitude": "-5.933430",
+          "Address": {
+            "SubBuildingName": null,
+            "BuildingName": "DRD Roads Service Car Park",
+            "BuildingNumber": "4",
+            "Thoroughfare": "Downshire Place",
+            "Street": "",
+            "DoubleDependantLocality": null,
+            "DependantLocality": "Belfast",
+            "PostTown": "Belfast",
+            "County": "County Antrim",
+            "PostCode": "BT2 730",
+            "Country": "gb",
+            "UPRN": null
+          },
+          "LocationShortDescription": "Little Victoria Street DRD Can Park",
+          "LocationLongDescription": ""
+        },
+        "ChargeDeviceManufacturer": null,
+        "ChargeDeviceModel": "",
+        "PublishStatusID": "1",
+        "DateCreated": "2012-04-12 10:17:49",
+        "DateUpdated": "2021-09-28 13:01:36",
+        "Attribution": "ecars ESB",
+        "DateDeleted": "n a ",
+        "Connector": [
+          {
+            "ConnectorId": "LBBD06001087",
+            "ConnectorType": "Type 2 Mennekes (IEC62196)",
+            "RatedOutputkW": "22.0",
+            "RatedOutput Voltage": "400",
+            "RatedOutputCurrent": "32",
+            "ChargeMethod": "Three Phase AC",
+            "ChargeMode": "3",
+            "ChargePointstatus": "În service",
+            "TetheredCable": "0",
+            "Information": "",
+            "Validated": "0"
+          },
+          {
+            "ConnectorId": "LBBD06001083",
+            "ConnectorType": "Type 2 Mennekes (IEC62196)",
+            "Ratedoutputkw": "22.0",
+            "RatedoutputVoltage": "400",
+            "RatedOutputCurrent": "32",
+            "ChargeMethod": "Th ree Phase AC",
+            "ChargeMode": "3",
+            "ChargePointStatus": "In service",
+            "TetheredCable": "0",
+            "Information": "",
+            "Validated": "0"
+          }
+        ],
+        "DeviceOwner": {
+          "OrganisationName": "ecars ESB",
+          "SchemeCode": "NIE",
+          "Website": "https: //www.esb.ieVecars",
+          "TelephoneNo": "00353 1258 3799"
+        },
+        "DeviceController": {
+          "OrganisationName": "ecars ESB",
+          "SchemeCode": "NIE",
+          "Website": "https: www.esb.ieecars",
+          "TelephoneNo": "00353 1258 3799"
+        },
+        "DeviceAccess": [],
+        "DeviceNetworks": "ecars ESB",
+        "ChargeDeviceStatus": "In service",
+        "PublishStatus": "Published",
+        "DeviceValidated": "0",
+        "RecordModerated": "Y",
+        "RecordLastUpdated": "2021 -07-06 11:16:43",
+        "RecordLast UpdatedBy": "ChargePlace Scotland",
+        "PaymentRequiredFlag": false,
+        "PaymentDetails": "",
+        "SubscriptionRequiredFlag": true,
+        "SubscriptionDet ails": "",
+        "Parking FeesFlag": false,
+        "ParkingFees Details": "",
+        "ParkingFeesUrl": null,
+        "AccessRestrictionFlag": false,
+        "AccessRestrictionDetails": "",
+        "PhysicalRestrictionFlag": false,
+        "PhysicalRestrictionText": "",
+        "OnStreetFlag": false,
+        "Location Type": "Public car park",
+        "Bearing": null,
+        "Accessible24Hours": false
+      },
+      {
+        "ChargeDeviceId": "9c8661befae6dbcd08304dbf4dcafodb",
+        "ChargeDeviceRef": "SC22",
+        "ChargeDeviceName": "Little Victoria St Car Park - Socket 2",
+        "ChargeDeviceText": "DRD Roads Service Car Park",
+        "ChargeDeviceLocation": {
+          "Latitude": "54.592703",
+          "Longitude": "-5.933430",
+          "Address": {
+            "SubBuildingName": null,
+            "BuildingName": "DRD Roads Service Car Park",
+            "BuildingNumber": "4",
+            "Thoroughfare": "Downshire Place",
+            "Street": "",
+            "DoubleDependantLocality": null,
+            "DependantLocality": "Belfast",
+            "PostTown": "Belfast",
+            "County": "County Antrim",
+            "PostCode": "BT2 730",
+            "Country": "gb",
+            "UPRN": null
+          },
+          "Location ShortDescription": "Little Victoria Street DRD Can Park",
+          "LocationLongDescription": ""
+        },
+        "ChargeDeviceManufacturer": null,
+        "ChargeDeviceModel": "",
+        "PublishStatusID": "1",
+        "DateCreated": "2012-04-12 10:17:49",
+        "DateUpdated": "2021-09-28 13:01:36",
+        "Attribution": "ecars ESB",
+        "DateDeleted": "n a ",
+        "Connector": [
+          {
+            "ConnectorId": "LBBD06001087",
+            "ConnectorType": "Type 2 Mennekes (IEC62196)",
+            "RatedOutputkw": "22.0",
+            "RatedOutput Voltage": "400",
+            "RatedOutputCurrent": "32",
+            "ChargeMethod": "Three Phase AC",
+            "ChargeMode": "3",
+            "ChargePointstatus": "În service",
+            "TetheredCable": "0",
+            "Information": "",
+            "Validated": "0"
+          },
+          {
+            "ConnectorId": "LBBD06001083",
+            "ConnectorType": "Type 2 Mennekes (IEC62196)",
+            "Ratedoutputkw": "22.0",
+            "RatedoutputVoltage": "400",
+            "RatedOutputCurrent": "32",
+            "ChargeMethod": "Th ree Phase AC",
+            "ChargeMode": "3",
+            "ChargePointStatus": "In service",
+            "TetheredCable": "0",
+            "Information": "",
+            "Validated": "0"
+          }
+        ],
+        "DeviceOwner": {
+          "OrganisationName": "ecars ESB",
+          "SchemeCode": "NIE",
+          "Website": "https: //www.esb.ieVecars",
+          "TelephoneNo": "00353 1258 3799"
+        },
+        "DeviceController": {
+          "OrganisationName": "ecars ESB",
+          "SchemeCode": "NIE",
+          "Website": "https: www.esb.ieecars",
+          "TelephoneNo": "00353 1258 3799"
+        },
+        "DeviceAccess": [],
+        "DeviceNetworks": "ecars ESB",
+        "ChargeDeviceStatus": "In service",
+        "PublishStatus": "Published",
+        "DeviceValidated": "0",
+        "RecordModerated": "Y",
+        "RecordLastUpdated": "2021 -07-06 11:16:43",
+        "RecordLast UpdatedBy": "ChargePlace Scotland",
+        "PaymentRequiredFlag": false,
+        "PaymentDetails": "",
+        "SubscriptionRequiredFlag": true,
+        "SubscriptionDet ails": "",
+        "Parking FeesFlag": false,
+        "ParkingFees Details": "",
+        "ParkingFeesUrl": null,
+        "AccessRestrictionFlag": false,
+        "AccessRestrictionDetails": "",
+        "PhysicalRestrictionFlag": false,
+        "PhysicalRestrictionText": "",
+        "OnStreetFlag": false,
+        "Location Type": "Public car park",
+        "Bearing": null,
+        "Accessible24Hours": false
+      }
+    ]
+  }
+  

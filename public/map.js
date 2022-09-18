@@ -26,20 +26,23 @@ async function getLocation() {
         map,
         radius: 1000,
       });
-      console.log(chargerData);
       var radius = locationCirlce.getRadius();
       var center = locationCirlce.getCenter();
       for (let index = 0; index < chargerData.length; index++) {
         const lat = chargerData[index].ChargeDeviceLatitude;
         const lng = chargerData[index].ChargeDeviceLongitude;
         const point = new google.maps.LatLng(lat, lng);
-        if (google.maps.geometry.spherical.computeDistanceBetween(point, center) <= radius) {
+        if (
+          google.maps.geometry.spherical.computeDistanceBetween(
+            point,
+            center
+          ) <= radius
+        ) {
           const marker = new google.maps.Marker({
             position: new google.maps.LatLng(lat, lng),
             map: map,
           });
-        }
-        else {
+        } else {
           console.log("Geolocation is not supported by this browser.");
         }
       }

@@ -50,10 +50,18 @@ async function calcRoute() {
             if (
               google.maps.geometry.spherical.computeDistanceBetween(point, circle.getCenter()) <= circle.getRadius()
             ){
-              new google.maps.Marker({
+              const marker = new google.maps.Marker({
                 position: point,
                 map: map,
               });
+              marker.addListener("click", () => {
+                var info = document.getElementById("info");
+                info.innerHTML = `${chargerData[index].ChargeDeviceId} ${chargerData[index].ShortDescription}`;
+                // info.innerHTML = chargerData[index].ShortDescription;
+                // const infowindow = new google.maps.InfoWindow({
+                //   content: chargerData[index].ChargeDeviceId,
+                // });
+              }, false);
             }
           }
         }

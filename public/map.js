@@ -7,6 +7,7 @@ var mapOptions = {
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 async function getLocation() {
+  document.querySelector('.loading-text').style.display = 'block';
   const chargerData = await showAll();
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -42,6 +43,7 @@ async function getLocation() {
             position: new google.maps.LatLng(lat, lng),
             map: map,
           });
+          document.querySelector('.loading-text').style.display = 'none';
         } else {
           console.log("Geolocation is not supported by this browser.");
         }

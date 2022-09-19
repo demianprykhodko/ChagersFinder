@@ -6,31 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./normalize.css">
   </head>
   <body>
     <div class="title">
       <h1>Trying out Google Maps API</h1>
     </div>
-    <div class="input">
-      <input type="text" id="from" placeholder="Origin" />
-      <input type="text" id="to" placeholder="Destination" />
+    <div class="option-section">
+      <div class="location-feature">
+        <button class="button_slide slide_down button1" onclick="showLocationDiv()">Location Finder</button>
+      </div>
+      <div class="route-feature">
+        <button class="button_slide slide_down button2" onclick="showRouteDiv()">Route Finder</button>
+      </div>
     </div>
-    <div class="button">
-      <button id="submit" onclick="calcRoute();">Submit</button>
+    <div class="location-section">
+      <div class="location-button">
+        <button id="location" class="button_slide slide_down" onclick="getLocation();">Get Location</button>
+      </div>
     </div>
-    <div id="map"></div>
-    <div class="location-button">
-      <button id="location" onclick="getLocation();">Get Location</button>
+    <div class="route-section">
+      <div class="input">
+        <input type="text" id="from" placeholder="Origin" />
+        <input type="text" id="to" placeholder="Destination" />
+      </div>
+      <div class="submit-button">
+        <button id="submit" class="button_slide slide_down" onclick="calcRoute();">Submit</button>
+      </div>
     </div>
-    <div id="info"></div>
-    <div id="output">
-
+    <div class="loading-text">
+      <p>Loading Chargers... Please wait...</p>
     </div>
+    <div class="map-section">
+      <div id="map"></div>
+      <div id="info"></div>
+    </div>
+    <div id="output"></div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnw4FgSCtVB444q7Gv1jON-4xTO6TyPfA&libraries=places"></script>
     <script src="./map.js"></script>
     <script src="./decodePolyline.js"></script>
     <script src="./axios.js"></script>
     <script src="./calcRoute.js"></script>
+    <script>
+      function showLocationDiv() {
+        document.querySelector(".button2").style.textDecoration = "none";
+        document.querySelector(".route-section").style.display = "none";
+        document.querySelector(".location-section").style.display = "flex";
+        document.querySelector(".button1").style.textDecoration = "underline";
+      }
+      function showRouteDiv() {
+        document.querySelector(".button1").style.textDecoration = "none";
+        document.querySelector(".location-section").style.display = "none";
+        document.querySelector(".route-section").style.display = "flex";
+        document.querySelector(".button2").style.textDecoration = "underline";
+      }
+    </script>
   </body>
 </html>

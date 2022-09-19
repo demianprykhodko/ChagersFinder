@@ -1,14 +1,96 @@
 #map{
-  width: 100%;
+  margin: 50px auto ;
+  width: 80%;
   height: 700px;
 }
-#map.visible {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 2s, opacity 2s linear;
+.location-section{
+  margin-top: 30px;
+  display: none;
+  justify-content: center;
 }
-#map.hidden {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 2s linear;
+.route-section{
+  margin-top: 30px;
+  display: none;
+  justify-content: center;
+}
+.location-feature{
+  margin-right: 50px;
+  display: inline-block;
+}
+.route-feature{
+  margin-left: 50px;
+  display: inline-block;
+}
+.option-section{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.button_slide {
+  color: black;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #D80286;
+}
+.title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+h1 { 
+  color: #111; 
+  font-family: "Lucida Console", Monaco, monospace; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-align: center; 
+}
+.input input{
+  border: 2px solid rgb(216, 2, 134);
+  background: hsl(0 0% 93%);
+  border-radius: 0px;
+  padding: 20px 36px;
+}
+input::placeholder{
+  font-size: 14px;
+  font-family: "Lucida Console", Monaco, monospace;
+  letter-spacing: 1px;
+  color: black;
+}
+#from{
+  margin-right: 30px;
+}
+#to{
+  margin-left: 30px;
+}
+.submit-button{
+  margin-left: 60px;
+}
+.loading-text{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lucida Console", Monaco, monospace;
+  letter-spacing: 1px;
+  display: none;
+}
+.map-section{
+  display: flex;
+}
+#info{
+  font-family: "Lucida Console", Monaco, monospace;
+  margin-top: 90px;
+  margin-left: 30px;
 }

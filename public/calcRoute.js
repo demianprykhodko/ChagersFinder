@@ -4,6 +4,7 @@ var directionsService = new google.maps.DirectionsService();
 directionsDisplay.setMap(map);
 const element = document.getElementById("map");
 async function calcRoute() {
+  document.querySelector(".loading-text").style.display = "block";
   const chargerData = await showAll();
   var request = {
     origin: document.getElementById("from").value,
@@ -48,24 +49,32 @@ async function calcRoute() {
             const lng = chargerData[index].ChargeDeviceLongitude;
             const point = new google.maps.LatLng(lat, lng);
             if (
-              google.maps.geometry.spherical.computeDistanceBetween(point, circle.getCenter()) <= circle.getRadius()
-            ){
+              google.maps.geometry.spherical.computeDistanceBetween(
+                point,
+                circle.getCenter()
+              ) <= circle.getRadius()
+            ) {
               const marker = new google.maps.Marker({
                 position: point,
                 map: map,
               });
-              marker.addListener("click", () => {
-                var info = document.getElementById("info");
-                info.innerHTML = `${chargerData[index].ChargeDeviceId} ${chargerData[index].ShortDescription}`;
-                // info.innerHTML = chargerData[index].ShortDescription;
-                // const infowindow = new google.maps.InfoWindow({
-                //   content: chargerData[index].ChargeDeviceId,
-                // });
-              }, false);
+              marker.addListener(
+                "click",
+                () => {
+                  var map = document.getElementById("map");
+                  map.style.margin = "60px 0";
+                  map.style.width = "70%";
+                  var info = document.getElementById("info");
+                  console.log(request);
+                  info.innerHTML = `ID: ${chargerData[index].ChargeDeviceId} <br\> Short Description: ${chargerData[index].ChargeDeviceShortDescription} <br\> Long Description: ${chargerData[index].ChargeDeviceLongDescription} <br\> Latitude: ${chargerData[index].ChargeDeviceLatitude} <br\> Longitude: ${chargerData[index].ChargeDeviceLongitude} <br\> <a href="https://www.google.com/maps/dir/?api=1&destination=${chargerData[index].ChargeDeviceLatitude},${chargerData[index].ChargeDeviceLongitude}" target="_blank">Get Directions</a>`;
+                },
+                false
+              );
             }
           }
         }
       }
+      document.querySelector(".loading-text").style.display = "none";
       directionsDisplay.setDirections(result);
     } else {
       output.innerHTML =

@@ -17,10 +17,8 @@ const start = async () => {
         data.ChargeDevice[index].ChargeDeviceLocation.Latitude;
       var ChargeDeviceLongitude =
         data.ChargeDevice[index].ChargeDeviceLocation.Longitude;
-      var ChargeDeviceShortDescription =
-        data.ChargeDevice[index].ChargeDeviceLocation.LocationShortDescription;
-      var ChargeDeviceLongDescription =
-        data.ChargeDevice[index].ChargeDeviceLocation.LocationLongDescription;
+      var ChargeDeviceName =
+        data.ChargeDevice[index].ChargeDeviceName;
       for (
         let index2 = 0;
         index2 < data.ChargeDevice[index].Connector.length;
@@ -42,8 +40,7 @@ const start = async () => {
         ChargeDeviceId,
         ChargeDeviceLatitude,
         ChargeDeviceLongitude,
-        ChargeDeviceShortDescription,
-        ChargeDeviceLongDescription,
+        ChargeDeviceName,
         Connector,
         PaymentRequiredFlag,
         ParkingFeesFlag,

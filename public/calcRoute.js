@@ -64,18 +64,20 @@ async function calcRoute() {
                   var map = document.getElementById("map");
                   map.style.margin = "60px 0";
                   map.style.width = "70%";
-                  var info = document.getElementById("info");
-                  console.log(request);
-                  info.innerHTML = `ID: ${chargerData[index].ChargeDeviceId} <br\> Short Description: ${chargerData[index].ChargeDeviceShortDescription} <br\> Long Description: ${chargerData[index].ChargeDeviceLongDescription} <br\> Latitude: ${chargerData[index].ChargeDeviceLatitude} <br\> Longitude: ${chargerData[index].ChargeDeviceLongitude} <br\> <a href="https://www.google.com/maps/dir/?api=1&destination=${chargerData[index].ChargeDeviceLatitude},${chargerData[index].ChargeDeviceLongitude}" target="_blank">Get Directions</a>`;
-                },
-                false
-              );
+                  var text = document.querySelector(".text");
+                  text.innerHTML = `ID: ${chargerData[index].ChargeDeviceId} <br\> Name: ${chargerData[index].ChargeDeviceName} <br\> Latitude: ${chargerData[index].ChargeDeviceLatitude} <br\> Longitude: ${chargerData[index].ChargeDeviceLongitude} <br\>`
+                  var button = document.querySelector(".button3");
+                  button.innerHTML = `<a href=https://www.google.co.uk/maps/dir/${document.getElementById("from").value}/${document.getElementById("from").to}/>Get directions</a>`
+                  console.log(document.getElementById("from").value);
+                    // <a class"button_slide slide_down" href="https://www.google.com/maps/dir/?api=1&destination=${chargerData[index].ChargeDeviceLatitude},${chargerData[index].ChargeDeviceLongitude}" target="_blank">Get Directions</a>
+                  false
+                });
             }
           }
         }
       }
       document.querySelector(".loading-text").style.display = "none";
-      directionsDisplay.setDirections(result);
+      directionsDisplay.setDirections(result); 
     } else {
       output.innerHTML =
         "div class='alert-danger'><i class='fas fa-exclamation-triangle'></i> Could not retrieve driving distance.</div>";

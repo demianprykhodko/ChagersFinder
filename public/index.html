@@ -39,7 +39,10 @@
     </div>
     <div class="map-section">
       <div id="map"></div>
-      <div id="info"></div>
+      <div class="info">
+        <div class="text"></div>
+        <div class="button3"></div>
+      </div>
     </div>
     <div id="output"></div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -48,6 +51,7 @@
     <script src="./decodePolyline.js"></script>
     <script src="./axios.js"></script>
     <script src="./calcRoute.js"></script>
+    <script src="./locationFeature.js"></script>
     <script>
       function showLocationDiv() {
         document.querySelector(".button2").style.textDecoration = "none";

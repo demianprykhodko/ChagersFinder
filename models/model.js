@@ -10,10 +10,7 @@ const chargerSchema = new mongoose.Schema({
   ChargeDeviceLongitude: {
     type: String,
   },
-  ChargeDeviceShortDescription: {
-    type: String,
-  },
-  ChargeDeviceLongDescription: {
+  ChargeDeviceName: {
     type: String,
   },
   Connector: [{

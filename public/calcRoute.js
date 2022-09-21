@@ -15,7 +15,7 @@ async function calcRoute() {
   };
   directionsService.route(request, (result, status) => {
     if (status == google.maps.DirectionsStatus.OK) {
-      const output = document.querySelector("#output");
+      const output = document.querySelector(".output-text");
       output.innerHTML =
         "<div class='alert-info'>From: " +
         document.getElementById("from").value +
